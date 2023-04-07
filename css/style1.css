@@ -1,0 +1,13 @@
+.wrapper{
+    width: 1360px;
+    height: 600px;
+    background-color: rgb(224, 7, 7);
+}
+header{
+    width: 1360px;
+    height: 100px;
+    background-color: cyan;
+}
+header nav{
+    float: right;
+}
