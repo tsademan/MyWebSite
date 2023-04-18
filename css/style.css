@@ -91,6 +91,12 @@ color:#fff;
 .tab-titles{
    display:flex;
    margin:20px 0 40px;
+   color:darkorchid;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 700;
+}
+.tab-titles p{
+font-size: 30px;
 }
 .tab-links{
    margin-right:50px ;
@@ -103,5 +109,26 @@ color:#fff;
 content: '';
 width: 0;
 height: 3px;
-background: #ff004f;
+background: rgba(238, 255, 0, 0.959);
+position: absolute;
+left:0;
+bottom: -8px;
+transition: .3s;
+}
+.tab-links.active-link::after{
+width:50%;
+}
+.tab-contents ul li{
+list-style-type: none;
+margin:10px 0;
+}
+.tab-contents ul li span{
+   color:chocolate;
+   font-size: 14px;
+}
+.tab-contents{
+   display: none;
+}
+.tab-contents.active-tab{
+   display: block;
 }

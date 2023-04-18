@@ -42,10 +42,31 @@
                 cannot provide</p>
 
                 <div class="tab-titles">
-                  <p class="tab-links">Skills</p>
-                  <p class="tab-links">Exeprience</p>
-                  <p class="tab-links">Education</p>
+                  <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('Exeprience')">Exeprience</p>
+                  <p class="tab-links" onclick="opentab('Education')">Education</p>
 
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                  <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                    <li><span>Web Development</span><br>Web App Development</li>
+                    <li><span>App Development</span><br>Building Android/ios Apps</li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="Exeprience">
+                  <ul>
+                    <li><span>2022-current</span><br>UI/UX Design training at Wolkite University</li>
+                    <li><span>2021-2022</span><br>learning Html,Css,Js at wku and from w3schools</li>
+                    <li><span>2021</span><br>Joined cs Bachelor degree at wku</li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                  <ul>
+                    <li><span>2023/2024</span><br>Designing my first Web/App Interfaces</li>
+                    <li><span>2022</span><br>learnt about web programming</li>
+                    <li><span>2024</span><br>BD from wku institute</li>
+                  </ul>
                 </div>
         </div>
 
@@ -53,6 +74,28 @@
 
     </div>
   </div>
+<!-- ..............Services.................. -->
+
+<div id="services">
+
+
+</div>
+
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+    }
+  </script>
 
 </body>
 </html>
