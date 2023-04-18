@@ -101,5 +101,7 @@ color:#fff;
 }
 .tab-links::after{
 content: '';
-
+width: 0;
+height: 3px;
+background: #ff004f;
 }
